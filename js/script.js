@@ -23,7 +23,7 @@ function myButtonClicked() {
 
   if (side1 == side2 && side2 == side3) {
     document.getElementById("answers").innerHTML = "Your triangle is an equilateral triangle."
-  } else if (side == side || side == side || side == side) {
+  } else if (side1 == side2 || side2 == side3 || side1 == side3) {
     document.getElementById("answers").innerHTML = "Your triangle is an isosceles triangle."
   } else {
     document.getElementById("answers").innerHTML = "Your triangle is a scalene triangle."
