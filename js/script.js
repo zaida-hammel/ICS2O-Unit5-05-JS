@@ -21,7 +21,7 @@ if (navigator.serviceWorker) {
    var angle2 = document.getElementById("angle2").innerHTML
    var angle3 = document.getElementById("angle3").innerHTML
 
-   if ((angle1 == angle2) && (angle2 == angle3)) {
+   if (angle1 == angle2 && angle2 == angle3) {
     document.getElementById("answers").innerHTML = "Your triangle is an equilateral triangle."
    }
    else if ((angle1 == angle2) || (angle2 == angle3) || (angle3 == angle1)) {
