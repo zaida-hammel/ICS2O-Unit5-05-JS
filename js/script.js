@@ -17,13 +17,13 @@ if (navigator.serviceWorker) {
  * This function determines what angles create what triangle.
  */
 function myButtonClicked() {
-  var angle1 = document.getElementById("side1").innerHTML
-  var angle2 = document.getElementById("side2").innerHTML
-  var angle3 = document.getElementById("side3").innerHTML
+  var side1 = document.getElementById("side1").value
+  var side2 = document.getElementById("side2").value
+  var side3 = document.getElementById("side3").value
 
-  if (angle1 == angle2 && angle2 == angle3) {
+  if (side1 == side2 && side2 == side3) {
     document.getElementById("answers").innerHTML = "Your triangle is an equilateral triangle."
-  } else if (angle1 == angle2 || angle2 == angle3 || angle3 == angle1) {
+  } else if (side == side || side == side || side == side) {
     document.getElementById("answers").innerHTML = "Your triangle is an isosceles triangle."
   } else {
     document.getElementById("answers").innerHTML = "Your triangle is a scalene triangle."
