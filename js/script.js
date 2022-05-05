@@ -16,18 +16,16 @@ if (navigator.serviceWorker) {
 /**
  * This function determines what angles create what triangle.
  */
- function myButtonClicked() {
-   var angle1 = document.getElementById("angle1").innerHTML
-   var angle2 = document.getElementById("angle2").innerHTML
-   var angle3 = document.getElementById("angle3").innerHTML
+function myButtonClicked() {
+  var angle1 = document.getElementById("side1").innerHTML
+  var angle2 = document.getElementById("side2").innerHTML
+  var angle3 = document.getElementById("side3").innerHTML
 
-   if (angle1 == angle2 && angle2 == angle3) {
+  if (angle1 == angle2 && angle2 == angle3) {
     document.getElementById("answers").innerHTML = "Your triangle is an equilateral triangle."
-   }
-   else if ((angle1 == angle2) || (angle2 == angle3) || (angle3 == angle1)) {
+  } else if (angle1 == angle2 || angle2 == angle3 || angle3 == angle1) {
     document.getElementById("answers").innerHTML = "Your triangle is an isosceles triangle."
-   }
-   else {
+  } else {
     document.getElementById("answers").innerHTML = "Your triangle is a scalene triangle."
-   }
- }
+  }
+}
